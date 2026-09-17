@@ -1,0 +1,17 @@
+{
+  "name": "elo-everything",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "dev:api": "pnpm --filter @elo/api dev",
+    "dev:web": "pnpm --filter @elo/web dev",
+    "db:generate": "pnpm --filter @elo/db generate",
+    "db:migrate": "pnpm --filter @elo/db migrate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

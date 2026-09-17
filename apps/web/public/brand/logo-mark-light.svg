@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="ELO-everything">
+  <title>ELO-everything</title>
+  <!-- Light tile for dark backgrounds / print invert -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.5"/>
+  <g transform="translate(32 30) rotate(-8)">
+    <rect x="-20" y="-1.25" width="40" height="2.5" rx="1.25" fill="#171717"/>
+    <rect x="-19" y="-14" width="10" height="14" rx="3" fill="#171717"/>
+    <rect x="9" y="-10" width="10" height="14" rx="3" fill="#171717" opacity="0.75"/>
+  </g>
+  <path d="M32 34 L38 46 H26 Z" fill="#B87333"/>
+  <circle cx="32" cy="34" r="2.2" fill="#C98545"/>
+  <rect x="22" y="48" width="20" height="3" rx="1.5" fill="#D4D4D4"/>
+</svg>

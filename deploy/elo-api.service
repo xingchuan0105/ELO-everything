@@ -1,0 +1,17 @@
+[Unit]
+Description=ELO-everything API (NestJS)
+After=network.target docker.service
+Wants=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/elo-everything/apps/api
+EnvironmentFile=/opt/elo-everything/.env
+ExecStart=/opt/elo-everything/apps/api/node_modules/.bin/tsx src/main.ts
+Restart=on-failure
+RestartSec=5
+User=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+# ELO-everything · Context-OS 工具家族
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /register
+
+Sitemap: https://elo.contextlm.top/sitemap.xml

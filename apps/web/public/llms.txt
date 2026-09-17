@@ -1,0 +1,15 @@
+# ELO-everything
+> 线下比赛记分与排名工具：ELO 评分制的赛事记录、选手排名与历史战绩。ContextLM 旗下，Context-OS 工具家族成员。
+
+## 是什么
+- 面向线下球局、桌游、办公室比赛的记分工具：你是记录员——建赛事、加选手、登记胜负，排名按 ELO 自动更新
+- 选手无需注册账号，仅记录员登录
+- 帮助文档：什么是 ELO 积分（/help/elo）、如何使用（/help/guide）
+
+## 使用
+- 免费网页工具：https://elo.contextlm.top/
+- 作者：邢川 · ContextLM 出品
+
+## 相关
+- 品牌母站：https://contextlm.top/
+- sitemap: https://elo.contextlm.top/sitemap.xml

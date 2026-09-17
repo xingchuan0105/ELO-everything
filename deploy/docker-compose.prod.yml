@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: elo-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: elo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-elo_prod_change_me}
+      POSTGRES_DB: elo_everything
+    ports:
+      - "127.0.0.1:54330:5432"
+    volumes:
+      - elo_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U elo -d elo_everything"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  elo_pg_data:

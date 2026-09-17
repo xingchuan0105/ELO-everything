@@ -1,0 +1,19 @@
+[Unit]
+Description=ELO-everything Web (Next.js)
+After=network.target elo-api.service
+Wants=elo-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/elo-everything/apps/web
+EnvironmentFile=/opt/elo-everything/.env
+ExecStart=/opt/elo-everything/apps/web/node_modules/.bin/next start -p 3110 -H 127.0.0.1
+Restart=on-failure
+RestartSec=5
+User=root
+Environment=NODE_ENV=production
+Environment=PORT=3110
+Environment=HOSTNAME=127.0.0.1
+
+[Install]
+WantedBy=multi-user.target
