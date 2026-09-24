@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { HashHighlight, HelpFooterNav, HelpNav } from "@/components/help/HelpChrome";
+
+export const metadata: Metadata = {
+  title: "参数与概念说明：积分步长 K、起始分、新手保护与平局",
+  description: "创建赛事与记分时每个参数的含义：积分步长 K、起始分、新手步长与保护场次、允许平局、对局时间，建议取值与填大填小的影响。",
+  alternates: { canonical: "/help/params" },
+};
 
 export default function HelpParamsPage() {
   return (

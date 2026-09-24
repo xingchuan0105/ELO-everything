@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { HashHighlight, HelpFooterNav, HelpNav } from "@/components/help/HelpChrome";
+
+export const metadata: Metadata = {
+  title: "常见问题",
+  description: "ELO-everything 记分常见问题：谁需要注册、录错怎么办、K 值填多少、能否记平局、2v2 / 5v5 怎么算分、选手能否自己看排名。",
+  alternates: { canonical: "/help/faq" },
+};
 
 export default function HelpFaqPage() {
   return (

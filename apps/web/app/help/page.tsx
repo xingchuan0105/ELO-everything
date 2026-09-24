@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { HelpNav } from "@/components/help/HelpChrome";
+
+export const metadata: Metadata = {
+  title: "帮助中心",
+  description: "ELO-everything 帮助中心：从零认识 ELO 积分，学会记录线下比赛、登记胜负与更新排名。",
+  alternates: { canonical: "/help" },
+};
 
 export default function HelpIndexPage() {
   return (

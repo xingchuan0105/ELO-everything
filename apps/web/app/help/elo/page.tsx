@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { HashHighlight, HelpFooterNav, HelpNav } from "@/components/help/HelpChrome";
+
+export const metadata: Metadata = {
+  title: "什么是 ELO 积分？原理、期望得分与更新公式",
+  description: "用讲故事的方式说明 ELO 积分从哪来、怎么涨跌：期望得分、积分步长 K 与更新式推导，以及 ELO-everything 如何用它给线下比赛排名。",
+  alternates: { canonical: "/help/elo" },
+};
 
 export default function HelpEloPage() {
   return (

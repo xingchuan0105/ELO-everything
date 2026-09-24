@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { HashHighlight, HelpFooterNav, HelpNav } from "@/components/help/HelpChrome";
+
+export const metadata: Metadata = {
+  title: "如何使用 ELO-everything：从建赛事到发布排名",
+  description: "按真实流程走一遍 ELO-everything：记录员注册、创建赛事、添加选手、登记对局、查看与发布排名。",
+  alternates: { canonical: "/help/guide" },
+};
 
 export default function HelpGuidePage() {
   return (

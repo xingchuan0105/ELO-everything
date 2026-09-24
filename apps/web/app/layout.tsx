@@ -11,8 +11,15 @@ export const metadata: Metadata = {
     default: "ELO-everything",
     template: "%s · ELO-everything",
   },
-  description: "线下比赛记分与排名 · 记录员工具 · Context-OS 工具家族",
-  alternates: { canonical: "/" },
+  description:
+    "ELO-everything：线下球局、桌游、办公室比赛的免费记分与 ELO 排名工具。记录员建赛事、登记胜负，排名自动更新，选手无需注册。ContextLM 工具家族。",
+  openGraph: {
+    siteName: "ELO-everything",
+    locale: "zh_CN",
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "ELO-everything" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -34,7 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     inLanguage: "zh-CN",
     description:
       "线下比赛记分与排名工具：ELO 评分制的比赛记录、选手排名与历史战绩管理。ContextLM 旗下工具，2026 年起持续维护。",
-    isPartOf: { "@type": "Organization", name: "ContextLM", url: "https://contextlm.top/" },
+    isPartOf: { "@type": "Organization", "@id": "https://contextlm.top/#org", name: "ContextLM", url: "https://contextlm.top/" },
+    author: { "@type": "Person", "@id": "https://contextlm.top/#xingchuan", name: "邢川" },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "CNY" },
   };
 
   return (

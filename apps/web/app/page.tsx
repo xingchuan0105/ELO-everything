@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { BRAND_HOME, BRAND_NAME } from "@/lib/brand";
+
+export const metadata: Metadata = {
+  title: { absolute: "ELO-everything — 线下比赛记分与 ELO 排名工具（免费）" },
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   return (
@@ -73,7 +79,7 @@ export default function HomePage() {
         记录员账号登录后可创建赛事 ·{" "}
         <a href="/help/elo">还不懂 ELO？先看故事</a>
         {" · "}
-        <a href={BRAND_HOME}>Context-OS 官网</a>
+        <a href={BRAND_HOME}>ContextLM 官网</a>
         {" · "}
         作者：邢川 · ContextLM 出品 · 页面更新日期：2026-08-18
       </p>
