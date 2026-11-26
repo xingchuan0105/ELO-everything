@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BRAND_HOME, BRAND_NAME } from "@/lib/brand";
+import { EloSandbox } from "@/components/EloSandbox";
 
 export const metadata: Metadata = {
   title: { absolute: "ELO-everything — 线下比赛记分与 ELO 排名工具（免费）" },
@@ -46,6 +47,8 @@ export default function HomePage() {
           ← 返回 {BRAND_NAME} 官网
         </a>
       </div>
+
+      <EloSandbox />
 
       <section style={{ marginTop: "2rem" }}>
         <h2 style={{ fontSize: "1.25rem", margin: "0 0 0.75rem" }}>三步上手记分流程</h2>
